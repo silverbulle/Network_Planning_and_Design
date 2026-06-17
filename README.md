@@ -14,7 +14,7 @@
 | 06 | [06_physical_network_design.md](./06_physical_network_design.md) | 综合布线系统六大子系统、机房物理环境设计规范 | 2小时 | ✅ 已完成 |
 | 07 | [07_network_testing_and_maintenance.md](./07_network_testing_and_maintenance.md) | 主动测试与被动测试方法与工具（SNMP/MIB、Ping/Sniffer） | 2小时 | ✅ 已完成 |
 | 08 | [08_network_troubleshooting.md](./08_network_troubleshooting.md) | 故障排查七步通用模型、系统诊断命令与管理运维工具 | 3小时 | ✅ 已完成 |
-| 09 | [09_network_performance_management.md](./09_network_performance_management.md) | 网络性能测试类型（负载/压力/强度/容量/稳定性/基准测试） | 2小时 | ⬜ 未开始 |
+| 09 | [09_network_performance_management.md](./09_network_performance_management.md) | 网络性能测试类型（负载/压力/强度/容量/稳定性/基准测试） | 2小时 | ✅ 已完成 |
 
 ---
 *注：进度状态标记：⬜ 未开始 | 🟡 进行中 | ✅ 已完成*
