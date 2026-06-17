@@ -6,7 +6,7 @@
 
 | 序号 | 章节主题 | 核心学习内容概要 | 建议学时 | 进度状态 |
 | :--- | :--- | :--- | :--- | :--- |
-| 01 | [01_network_planning_basics.md](./01_network_planning_basics.md) | 网络生命周期模型（四、五、八阶段）、核心设计原则 | 2小时 | ⬜ 未开始 |
+| 01 | [01_network_planning_basics.md](./01_network_planning_basics.md) | 网络生命周期模型（四、五、八阶段）、核心设计原则 | 2小时 | ✅ 已完成 |
 | 02 | [02_three_layer_and_large_two_layer.md](./02_three_layer_and_large_two_layer.md) | 传统三层架构设计与大二层扁平化架构对比 | 3小时 | ⬜ 未开始 |
 | 03 | [03_requirement_analysis.md](./03_requirement_analysis.md) | 业务需求与网络性能指标分析（带宽/时延/抖动/丢包率） | 2小时 | ⬜ 未开始 |
 | 04 | [04_communication_specification.md](./04_communication_specification.md) | 通信模式分类与边界分析（P2P, C/S, B/S, 分布式计算） | 2小时 | ⬜ 未开始 |
