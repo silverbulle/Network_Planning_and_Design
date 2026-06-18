@@ -5,7 +5,7 @@
 ```mermaid
 flowchart TD
     %% 传统三层网络架构
-    subgraph 传统三层网络架构 (Traditional 3-Layer)
+    subgraph T3["传统三层网络架构 (Traditional 3-Layer)"]
         direction TB
         T_Core1["双核心交换机 (Core)"] <-->|双归冗余链路| T_Core2["双核心交换机 (Core)"]
         T_Core1 & T_Core2 <-->|路由连接 / 骨干转发| T_Agg1["汇聚交换机 (Agg1)<br>【三层网关终结】"]
@@ -17,10 +17,10 @@ flowchart TD
     end
 
     %% 大二层（扁平化）网络架构
-    subgraph 大二层网络架构 (Large L2 / Flat)
+    subgraph TL2["大二层网络架构 (Large L2 / Flat)"]
         direction TB
         L_CoreAgg1["核心/汇聚融合节点 (Core-Agg1)"] <-->|CSS 堆叠 / M-LAG 互联| L_CoreAgg2["核心/汇聚融合节点 (Core-Agg2)"]
-        subgraph 虚拟化/隧道控制层 (SDN / EVPN / VXLAN)
+        subgraph SDN["虚拟化/隧道控制层 (SDN / EVPN / VXLAN)"]
             L_Gateway["集中网关 / 分布式网关 (VTEP)<br>【三层网关上移至核心/虚板】"]
         end
         L_CoreAgg1 & L_CoreAgg2 <-->|跨设备链路聚合 (Eth-Trunk)<br>物理防环，无端口阻塞| L_Acc1["扁平化接入交换机 (Access1)"]

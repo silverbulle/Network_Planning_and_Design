@@ -5,7 +5,7 @@
 ```mermaid
 flowchart TD
     %% 综合布线系统 (PDS) 六大子系统
-    subgraph PDS六大子系统 (Premises Distribution System)
+    subgraph PDS["PDS六大子系统 (Premises Distribution System)"]
         direction TB
         Campus["建筑群子系统 (Campus Subsystem)<br>【楼宇间光缆与管道，室外敷设】"] -->|室外主干光缆 / 管道| MDF["设备间子系统 (Equipment Room)<br>【中心机房 MDF，核心设备与主配线架】"]
         MDF -->|垂直干线光缆 / 大对数铜缆| Vertical["干线子系统 (Backbone Subsystem)<br>【垂直竖井 / 主干通道，连接楼层弱电间】"]
@@ -18,7 +18,7 @@ flowchart TD
     end
 
     %% 国家标准机房设计规范 (GB 50174)
-    subgraph 机房设计规范 (GB 50174 Specs)
+    subgraph GB["机房设计规范 (GB 50174 Specs)"]
         direction TB
         Grade["机房等级划分"] --> GradeA["A级 (容错型)<br>可用性 >= 99.995%<br>双路市电 + 2N UPS / 柴发<br>金融/政府/电力等核心系统"]
         Grade --> GradeB["B级 (冗余型)<br>可用性 >= 99.9%<br>冗余设计 N+1 UPS<br>中大型企业核心系统"]
