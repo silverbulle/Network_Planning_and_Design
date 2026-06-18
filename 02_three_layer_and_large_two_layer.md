@@ -4,39 +4,39 @@
 
 ```mermaid
 flowchart TD
-    %% 传统三层网络架构
-    subgraph T3["传统三层网络架构 (Traditional 3-Layer)"]
+    subgraph T3["传统三层网络架构"]
         direction TB
-        T_Core1["双核心交换机 (Core)"] <-->|双归冗余链路| T_Core2["双核心交换机 (Core)"]
-        T_Core1 & T_Core2 <-->|路由连接 / 骨干转发| T_Agg1["汇聚交换机 (Agg1)<br>【三层网关终结】"]
-        T_Core1 & T_Core2 <-->|路由连接 / 骨干转发| T_Agg2["汇聚交换机 (Agg2)<br>【三层网关终结】"]
-        T_Agg1 <-->|MSTP + VRRP<br>（阻塞冗余链路）| T_Agg2
-        T_Agg1 & T_Agg2 <-->|二层透传 VLAN| T_Acc1["接入交换机 (Access1)"]
-        T_Agg1 & T_Agg2 <-->|二层透传 VLAN| T_Acc2["接入交换机 (Access2)"]
-        T_Acc1 -->|终端接入| T_User["PC / IP 电话等终端"]
+        T_Core1["双核心交换机 Core"] <-->|双归冗余链路| T_Core2["双核心交换机 Core"]
+        T_Core1 <-->|骨干转发| T_Agg1["汇聚交换机 Agg1\n三层网关终结"]
+        T_Core2 <-->|骨干转发| T_Agg2["汇聚交换机 Agg2\n三层网关终结"]
+        T_Core1 <-->|骨干转发| T_Agg2
+        T_Core2 <-->|骨干转发| T_Agg1
+        T_Agg1 <-->|MSTP + VRRP\n阻塞冗余链路| T_Agg2
+        T_Agg1 <-->|二层透传 VLAN| T_Acc1["接入交换机 Access1"]
+        T_Agg2 <-->|二层透传 VLAN| T_Acc1
+        T_Agg1 <-->|二层透传 VLAN| T_Acc2["接入交换机 Access2"]
+        T_Agg2 <-->|二层透传 VLAN| T_Acc2
+        T_Acc1 -->|终端接入| T_User["PC / IP电话等终端"]
     end
 
-    %% 大二层（扁平化）网络架构
-    subgraph TL2["大二层网络架构 (Large L2 / Flat)"]
+    subgraph TL2["大二层扁平化网络架构"]
         direction TB
-        L_CoreAgg1["核心/汇聚融合节点 (Core-Agg1)"] <-->|CSS 堆叠 / M-LAG 互联| L_CoreAgg2["核心/汇聚融合节点 (Core-Agg2)"]
-        subgraph SDN["虚拟化/隧道控制层 (SDN / EVPN / VXLAN)"]
-            L_Gateway["集中网关 / 分布式网关 (VTEP)<br>【三层网关上移至核心/虚板】"]
-        end
-        L_CoreAgg1 & L_CoreAgg2 <-->|跨设备链路聚合 (Eth-Trunk)<br>物理防环，无端口阻塞| L_Acc1["扁平化接入交换机 (Access1)"]
-        L_CoreAgg1 & L_CoreAgg2 <-->|跨设备链路聚合 (Eth-Trunk)<br>物理防环，无端口阻塞| L_Acc2["扁平化接入交换机 (Access2)"]
-        L_Acc1 & L_Acc2 -.->|Overlay VXLAN 隧道<br>跨三层物理路由的大二层| L_Tunnel["VXLAN 隧道 (VNI)"]
-        L_Acc1 -->|二层透明传输 / 集中认证| L_User["终端 / 虚拟机 (VM)"]
+        L_CA1["核心汇聚融合节点1\nCSS/M-LAG互联"] <-->|跨设备链路聚合\n物理防环无阻塞| L_Acc1["扁平化接入 Access1"]
+        L_CA2["核心汇聚融合节点2\nCSS/M-LAG互联"] <-->|跨设备链路聚合\n物理防环无阻塞| L_Acc1
+        L_CA1 <-->|跨设备链路聚合\n物理防环无阻塞| L_Acc2["扁平化接入 Access2"]
+        L_CA2 <-->|跨设备链路聚合\n物理防环无阻塞| L_Acc2
+        L_CA1 <-->|堆叠/M-LAG| L_CA2
+        L_Acc1 -.->|VXLAN Overlay\n大二层隧道| L_Tunnel["VXLAN隧道 VNI"]
+        L_Acc2 -.->|VXLAN Overlay\n大二层隧道| L_Tunnel
+        L_Acc1 -->|二层透明传输| L_User["终端 / 虚拟机 VM"]
     end
 
-    %% 样式美化
     style T_Core1 fill:#fafafa,stroke:#9e9e9e,stroke-width:1px
     style T_Core2 fill:#fafafa,stroke:#9e9e9e,stroke-width:1px
     style T_Agg1 fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
     style T_Agg2 fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style L_CoreAgg1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    style L_CoreAgg2 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    style L_Gateway fill:#fff3e0,stroke:#ef6c00,stroke-width:1.5px
+    style L_CA1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style L_CA2 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
 ```
 
 ---
