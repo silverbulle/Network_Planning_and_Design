@@ -211,10 +211,29 @@ IP 规划步骤：确定数量 $\rightarrow$ 考虑 NAT $\rightarrow$ 子网划�
 2. 非根桥 SWB 到达根桥路径开销均相同，需比较 SWA（对端）发来的 BPDU 接口编号。SWA 接口编号更小的那个链路被 SWB 选为根端口。
 3. SWB 剩下的另一个接口未竞争过，成为非指定端口并被逻辑阻塞。
 
-### 📥 真题 4：MSTP 与 Trunk 聚合的严谨配置（2022年11月）
-**【题目】** SWA 的接口 1 配置了 GVRP 且允许 vlan 1 和 10 通过，接口 2 也配置为 trunk 但未开启 GVRP。如果要将两者加入同一个链路聚合组，会发生什么？
-**【参考答案】** 只有将接口 2 的配置改为与接口 1 完全一致，二者才能加入同一个聚合组。
-**【解析】** 链路聚合要求参与捆绑的所有物理接口的物理参数（速率/双工）与逻辑参数（Trunk类型/允许通过的 VLAN 列表/GVRP配置）必须 100% 一致。
+### 📥 真题 4：MSTP 与端口聚合配置辨析（2022年11月第58题）
+**【题目】** 交换机 SWA、SWB 通过两根光纤千兆以太网链路连接。SWA 上配置如下：
+```
+[SWA] interface GigabitEthernet 1/0/1
+[SWA-GigabitEthernet1/0/1] gvrp
+[SWA-GigabitEthernet1/0/1] port link-type trunk
+[SWA-GigabitEthernet1/0/1] port trunk permit vlan 1 10
+[SWA] interface GigabitEthernet 1/0/2
+[SWA-GigabitEthernet1/0/2] port link-type trunk
+[SWA-GigabitEthernet1/0/2] port trunk permit vlan 1 10
+```
+若在 SWA 交换机上开启 MSTP，则下列描述正确的是（ ）。
+*   B. 只有将 GigabitEthernet1/0/2 的配置改为与 GigabitEthernet1/0/1 一致，二者才能加入同一个聚合组
+*   D. GigabitEthernet1/0/1 和 GigabitEthernet1/0/2 可以参加转发
+
+**【参考答案】**：**D**
+
+**【解析】** 这是一道**反套路辨析题**，核心考点是破除"GVRP/MSTP 配置不同会影响端口聚合"的误区：
+1. **GVRP、MSTP 等配置存在不同，也不会影响端口聚合**——链路聚合只要求物理参数（速率/双工）与基本逻辑参数（Trunk 类型、允许通过的 VLAN 列表）一致即可，GVRP 是否开启不影响聚合。故 B 选项错误。
+2. 本题给出的命令**只配置了 trunk 和允许通过的 VLAN，并未配置端口聚合**。既然没有做 Eth-Trunk 聚合，1/0/1 和 1/0/2 就是两条普通的双链路，会形成二层环路。
+3. 开启 MSTP 后，为防止环路，MSTP 会在两条链路中**阻塞一条**，但两个接口本身都**可以参加转发**（指都能被 MSTP 纳入角色计算，一个转发、一个阻塞，而非"被聚合淘汰")，故 D 正确。
+
+> **易错点**：不要一看到"两根链路 + 配置不同"就想当然选"必须改一致才能聚合"。关键要先判断**题目到底有没有配置聚合**——本题根本没配聚合，考的是 MSTP 防环，不是聚合一致性。
 
 ### 📥 真题 5：高可用服务器集群（2018年11月）
 **【题目】** 方案一：采用高可用性集群，SQL server 单活工作模式。方案二：Oracle 双活工作模式。对此描述错误的是？
