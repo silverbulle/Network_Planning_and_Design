@@ -1,2 +1,5 @@
 # Network plan PDF source materials (too large for git, ~316MB)
 network-plan/
+
+# OCR temporary images (rendered PDF pages, not source content)
+_ocr/
