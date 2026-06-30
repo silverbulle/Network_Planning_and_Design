@@ -12,7 +12,7 @@
 | 18 | [18_attacks_and_defense.md](./18_attacks_and_defense.md) | 主动/被动攻击、DDoS、SQL注入、ARP欺骗 | ✅ |
 | 19 | [19_firewall_and_acl.md](./19_firewall_and_acl.md) | 包过滤/状态检测/应用网关、DMZ、ACL | ✅ |
 | 20 | [20_ids_and_ips.md](./20_ids_and_ips.md) | IDS旁路检测 vs IPS串联阻断、误用/异常检测 | ✅ |
-| 21 | [21_vpn_technology.md](./21_vpn_technology.md) | IPSec(AH/ESP/IKE)、SSL VPN、传输/隧道模式 | ⬜ |
+| 21 | [21_vpn_technology.md](./21_vpn_technology.md) | IPSec(AH/ESP/IKE)、SSL VPN、传输/隧道模式 | ✅ |
 | 22 | [22_cryptography.md](./22_cryptography.md) | 对称/非对称加密、哈希、数字签名、PKI/CA、SM系列 | ⬜ |
 | 23 | [23_security_applications.md](./23_security_applications.md) | HTTPS/SSL/TLS、邮件安全、Web安全 | ⬜ |
 | 24 | [24_security_audit.md](./24_security_audit.md) | 日志审计、审计系统架构、合规留存 | ⬜ |
