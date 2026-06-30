@@ -45,7 +45,7 @@
 | 19 | [network-security/19_firewall_and_acl.md](./network-security/19_firewall_and_acl.md) | 防火墙技术(包过滤/状态检测/应用网关)、ACL | 2小时 | ✅ 已完成 |
 | 20 | [network-security/20_ids_and_ips.md](./network-security/20_ids_and_ips.md) | IDS旁路检测 vs IPS串联阻断 | 2小时 | ✅ 已完成 |
 | 21 | [network-security/21_vpn_technology.md](./network-security/21_vpn_technology.md) | IPSec(AH/ESP/IKE)、SSL VPN | 3小时 | ✅ 已完成 |
-| 22 | [network-security/22_cryptography.md](./network-security/22_cryptography.md) | 对称/非对称加密、哈希、数字签名、PKI、SM系列 | 3小时 | ⬜ 未开始 |
+| 22 | [network-security/22_cryptography.md](./network-security/22_cryptography.md) | 对称/非对称加密、哈希、数字签名、PKI、SM系列 | 3小时 | ✅ 已完成 |
 | 23 | [network-security/23_security_applications.md](./network-security/23_security_applications.md) | HTTPS/SSL/TLS、邮件安全、Web安全 | 2小时 | ⬜ 未开始 |
 | 24 | [network-security/24_security_audit.md](./network-security/24_security_audit.md) | 安全审计、日志留存、合规 | 1小时 | ⬜ 未开始 |
 
