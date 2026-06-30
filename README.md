@@ -25,7 +25,7 @@
 | 序号 | 章节主题 | 核心学习内容概要 | 建议学时 | 进度状态 |
 | :--- | :--- | :--- | :--- | :--- |
 | 10 | [cloud-datacenter/10_servers.md](./cloud-datacenter/10_servers.md) | 服务器架构与选型（机架式/塔式/刀片、CPU/内存/IO子系统） | 2小时 | ✅ 已完成 |
-| 11 | [cloud-datacenter/11_disks_and_tapes.md](./cloud-datacenter/11_disks_and_tapes.md) | 硬盘接口技术与磁带归档存储 | 1小时 | ⬜ 未开始 |
+| 11 | [cloud-datacenter/11_disks_and_tapes.md](./cloud-datacenter/11_disks_and_tapes.md) | 硬盘接口技术与磁带归档存储 | 1小时 | ✅ 已完成 |
 | 12 | [cloud-datacenter/12_raid_technology.md](./cloud-datacenter/12_raid_technology.md) | RAID 级别原理与磁盘阵列选型计算 | 2小时 | ⬜ 未开始 |
 | 13 | [cloud-datacenter/13_network_storage.md](./cloud-datacenter/13_network_storage.md) | DAS/NAS/SAN 架构与 FC/iSCSI/FCoE 协议 | 3小时 | ⬜ 未开始 |
 | 14 | [cloud-datacenter/14_cloud_computing_virtualization.md](./cloud-datacenter/14_cloud_computing_virtualization.md) | 虚拟化技术与云服务模型(IaaS/PaaS/SaaS) | 3小时 | ⬜ 未开始 |

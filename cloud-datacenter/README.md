@@ -9,7 +9,7 @@
 | 序号 | 章节主题 | 核心内容概要 | 进度 |
 | :--- | :--- | :--- | :--- |
 | 10 | [10_servers.md](./10_servers.md) | 服务器架构、CPU/内存/IO、机架式/塔式/刀片 | ✅ |
-| 11 | [11_disks_and_tapes.md](./11_disks_and_tapes.md) | 硬盘接口(SAS/SATA/NL-SAS)、磁带归档 | ⬜ |
+| 11 | [11_disks_and_tapes.md](./11_disks_and_tapes.md) | 硬盘接口(SAS/SATA/NL-SAS)、磁带归档 | ✅ |
 | 12 | [12_raid_technology.md](./12_raid_technology.md) | RAID 0/1/5/6/10/50 级别、条带/镜像/校验 | ⬜ |
 | 13 | [13_network_storage.md](./13_network_storage.md) | DAS/NAS/SAN、FC-SAN/iSCSI、FCoE | ⬜ |
 | 14 | [14_cloud_computing_virtualization.md](./14_cloud_computing_virtualization.md) | 虚拟化(KVM/VMware)、IaaS/PaaS/SaaS、公有/私有/混合云 | ⬜ |
