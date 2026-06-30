@@ -14,7 +14,7 @@
 | 13 | [13_network_storage.md](./13_network_storage.md) | DAS/NAS/SAN、FC-SAN/iSCSI、FCoE | ✅ |
 | 14 | [14_cloud_computing_virtualization.md](./14_cloud_computing_virtualization.md) | 虚拟化(KVM/VMware)、IaaS/PaaS/SaaS、公有/私有/混合云 | ✅ |
 | 15 | [15_backup_and_disaster_recovery.md](./15_backup_and_disaster_recovery.md) | 备份策略(全量/增量/差异)、RPO/RTO、容灾等级 | ✅ |
-| 16 | [16_video_conferencing.md](./16_video_conferencing.md) | H.323/SIP、MCU、1080p/4K、会议组网 | ⬜ |
+| 16 | [16_video_conferencing.md](./16_video_conferencing.md) | H.323/SIP、MCU、1080p/4K、会议组网 | ✅ |
 
 ---
 *进度状态：⬜ 未开始 | 🟡 进行中 | ✅ 已完成*

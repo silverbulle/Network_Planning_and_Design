@@ -30,7 +30,7 @@
 | 13 | [cloud-datacenter/13_network_storage.md](./cloud-datacenter/13_network_storage.md) | DAS/NAS/SAN 架构与 FC/iSCSI/FCoE 协议 | 3小时 | ✅ 已完成 |
 | 14 | [cloud-datacenter/14_cloud_computing_virtualization.md](./cloud-datacenter/14_cloud_computing_virtualization.md) | 虚拟化技术与云服务模型(IaaS/PaaS/SaaS) | 3小时 | ✅ 已完成 |
 | 15 | [cloud-datacenter/15_backup_and_disaster_recovery.md](./cloud-datacenter/15_backup_and_disaster_recovery.md) | 备份策略与容灾等级(RPO/RTO) | 2小时 | ✅ 已完成 |
-| 16 | [cloud-datacenter/16_video_conferencing.md](./cloud-datacenter/16_video_conferencing.md) | 视频会议协议(H.323/SIP)与组网 | 1小时 | ⬜ 未开始 |
+| 16 | [cloud-datacenter/16_video_conferencing.md](./cloud-datacenter/16_video_conferencing.md) | 视频会议协议(H.323/SIP)与组网 | 1小时 | ✅ 已完成 |
 
 ---
 *注：进度状态标记：⬜ 未开始 | 🟡 进行中 | ✅ 已完成*
