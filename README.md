@@ -28,7 +28,7 @@
 | 11 | [cloud-datacenter/11_disks_and_tapes.md](./cloud-datacenter/11_disks_and_tapes.md) | 硬盘接口技术与磁带归档存储 | 1小时 | ✅ 已完成 |
 | 12 | [cloud-datacenter/12_raid_technology.md](./cloud-datacenter/12_raid_technology.md) | RAID 级别原理与磁盘阵列选型计算 | 2小时 | ✅ 已完成 |
 | 13 | [cloud-datacenter/13_network_storage.md](./cloud-datacenter/13_network_storage.md) | DAS/NAS/SAN 架构与 FC/iSCSI/FCoE 协议 | 3小时 | ✅ 已完成 |
-| 14 | [cloud-datacenter/14_cloud_computing_virtualization.md](./cloud-datacenter/14_cloud_computing_virtualization.md) | 虚拟化技术与云服务模型(IaaS/PaaS/SaaS) | 3小时 | ⬜ 未开始 |
+| 14 | [cloud-datacenter/14_cloud_computing_virtualization.md](./cloud-datacenter/14_cloud_computing_virtualization.md) | 虚拟化技术与云服务模型(IaaS/PaaS/SaaS) | 3小时 | ✅ 已完成 |
 | 15 | [cloud-datacenter/15_backup_and_disaster_recovery.md](./cloud-datacenter/15_backup_and_disaster_recovery.md) | 备份策略与容灾等级(RPO/RTO) | 2小时 | ⬜ 未开始 |
 | 16 | [cloud-datacenter/16_video_conferencing.md](./cloud-datacenter/16_video_conferencing.md) | 视频会议协议(H.323/SIP)与组网 | 1小时 | ⬜ 未开始 |
 
