@@ -33,4 +33,21 @@
 | 16 | [cloud-datacenter/16_video_conferencing.md](./cloud-datacenter/16_video_conferencing.md) | 视频会议协议(H.323/SIP)与组网 | 1小时 | ✅ 已完成 |
 
 ---
+
+## 🔒 网络安全模块 (Network Security)
+
+本模块对应"summer课堂"**11-x 系列课件**，聚焦网络安全体系、攻击防御、防火墙、IDS/IPS、VPN、密码学等，是**重点考核模块**（上午 5-8 分 + 案例试题三 25 分，可出论文）。详见 [network-security/README.md](./network-security/README.md)。
+
+| 序号 | 章节主题 | 核心学习内容概要 | 建议学时 | 进度状态 |
+| :--- | :--- | :--- | :--- | :--- |
+| 17 | [network-security/17_security_architecture.md](./network-security/17_security_architecture.md) | OSI安全体系三维、5服务8机制、信息保障模型 | 2小时 | ✅ 已完成 |
+| 18 | [network-security/18_attacks_and_defense.md](./network-security/18_attacks_and_defense.md) | 主动/被动攻击与防御、DDoS、SQL注入 | 2小时 | ⬜ 未开始 |
+| 19 | [network-security/19_firewall_and_acl.md](./network-security/19_firewall_and_acl.md) | 防火墙技术(包过滤/状态检测/应用网关)、ACL | 2小时 | ⬜ 未开始 |
+| 20 | [network-security/20_ids_and_ips.md](./network-security/20_ids_and_ips.md) | IDS旁路检测 vs IPS串联阻断 | 2小时 | ⬜ 未开始 |
+| 21 | [network-security/21_vpn_technology.md](./network-security/21_vpn_technology.md) | IPSec(AH/ESP/IKE)、SSL VPN | 3小时 | ⬜ 未开始 |
+| 22 | [network-security/22_cryptography.md](./network-security/22_cryptography.md) | 对称/非对称加密、哈希、数字签名、PKI、SM系列 | 3小时 | ⬜ 未开始 |
+| 23 | [network-security/23_security_applications.md](./network-security/23_security_applications.md) | HTTPS/SSL/TLS、邮件安全、Web安全 | 2小时 | ⬜ 未开始 |
+| 24 | [network-security/24_security_audit.md](./network-security/24_security_audit.md) | 安全审计、日志留存、合规 | 1小时 | ⬜ 未开始 |
+
+---
 *注：进度状态标记：⬜ 未开始 | 🟡 进行中 | ✅ 已完成*
