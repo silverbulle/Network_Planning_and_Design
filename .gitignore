@@ -3,3 +3,4 @@ network-plan/
 
 # OCR temporary images (rendered PDF pages, not source content)
 _ocr/
+_sec*.txt
