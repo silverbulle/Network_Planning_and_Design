@@ -9,7 +9,7 @@
 | 序号 | 章节主题 | 核心内容概要 | 进度 |
 | :--- | :--- | :--- | :--- |
 | 17 | [17_security_architecture.md](./17_security_architecture.md) | OSI安全体系三维、5服务8机制、PDRR/P2DR/WPDRRC | ✅ |
-| 18 | [18_attacks_and_defense.md](./18_attacks_and_defense.md) | 主动/被动攻击、DDoS、SQL注入、ARP欺骗 | ⬜ |
+| 18 | [18_attacks_and_defense.md](./18_attacks_and_defense.md) | 主动/被动攻击、DDoS、SQL注入、ARP欺骗 | ✅ |
 | 19 | [19_firewall_and_acl.md](./19_firewall_and_acl.md) | 包过滤/状态检测/应用网关、DMZ、ACL | ⬜ |
 | 20 | [20_ids_and_ips.md](./20_ids_and_ips.md) | IDS旁路检测 vs IPS串联阻断、误用/异常检测 | ⬜ |
 | 21 | [21_vpn_technology.md](./21_vpn_technology.md) | IPSec(AH/ESP/IKE)、SSL VPN、传输/隧道模式 | ⬜ |

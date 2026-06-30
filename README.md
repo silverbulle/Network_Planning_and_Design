@@ -41,7 +41,7 @@
 | 序号 | 章节主题 | 核心学习内容概要 | 建议学时 | 进度状态 |
 | :--- | :--- | :--- | :--- | :--- |
 | 17 | [network-security/17_security_architecture.md](./network-security/17_security_architecture.md) | OSI安全体系三维、5服务8机制、信息保障模型 | 2小时 | ✅ 已完成 |
-| 18 | [network-security/18_attacks_and_defense.md](./network-security/18_attacks_and_defense.md) | 主动/被动攻击与防御、DDoS、SQL注入 | 2小时 | ⬜ 未开始 |
+| 18 | [network-security/18_attacks_and_defense.md](./network-security/18_attacks_and_defense.md) | 主动/被动攻击与防御、DDoS、SQL注入 | 2小时 | ✅ 已完成 |
 | 19 | [network-security/19_firewall_and_acl.md](./network-security/19_firewall_and_acl.md) | 防火墙技术(包过滤/状态检测/应用网关)、ACL | 2小时 | ⬜ 未开始 |
 | 20 | [network-security/20_ids_and_ips.md](./network-security/20_ids_and_ips.md) | IDS旁路检测 vs IPS串联阻断 | 2小时 | ⬜ 未开始 |
 | 21 | [network-security/21_vpn_technology.md](./network-security/21_vpn_technology.md) | IPSec(AH/ESP/IKE)、SSL VPN | 3小时 | ⬜ 未开始 |
